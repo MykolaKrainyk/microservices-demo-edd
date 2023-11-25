@@ -33,3 +33,4 @@ build/
 .vscode/
 /.mvn/
 /twitter-to-kafka-service/logs/
+/twitter-to-kafka-service/twitter-to-kafka-service/logs/twitter-to-kafka-service.log
