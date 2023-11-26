@@ -34,3 +34,5 @@ build/
 /.mvn/
 /twitter-to-kafka-service/logs/
 /twitter-to-kafka-service/twitter-to-kafka-service/logs/twitter-to-kafka-service.log
+/docker-compose/docker-logs/
+/twitter-to-kafka-service/twitter-to-kafka-service/logs/archived/
