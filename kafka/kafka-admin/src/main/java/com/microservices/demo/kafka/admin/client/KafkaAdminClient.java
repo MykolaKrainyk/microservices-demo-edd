@@ -51,6 +51,7 @@ public class KafkaAdminClient {
         } catch (Exception e) {
             throw new KafkaClientException("Reached max number of retry for creating kafka topic(s)!", e);
         }
+        checkTopicsCreated();
     }
 
     public void checkTopicsCreated() {
@@ -76,7 +77,7 @@ public class KafkaAdminClient {
         int multiplier = retryConfigData.getMultiplier().intValue();
         Long sleepTimeMs = retryConfigData.getSleepTimeMs();
 
-        while (getSchemaRegistryStatus().is2xxSuccessful()) {
+        while (!getSchemaRegistryStatus().is2xxSuccessful()) {
             checkMaxRetry(retryCount, maxRetry);
             sleep(sleepTimeMs);
             sleepTimeMs *= multiplier;
