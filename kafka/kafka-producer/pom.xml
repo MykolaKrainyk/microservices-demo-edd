@@ -9,4 +9,15 @@
     </parent>
 
     <artifactId>kafka-producer</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>kafka-model</artifactId>
+        </dependency>
+    </dependencies>
 </project>

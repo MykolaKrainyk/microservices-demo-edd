@@ -1,4 +1,4 @@
-package com.microservices.demo.kafka.admin.config.exception;
+package com.microservices.demo.kafka.admin.exception;
 
 public class KafkaClientException extends RuntimeException {
 
